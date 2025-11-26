@@ -11,8 +11,8 @@ app.get('/', (req, res) => {
 
 app.get('/usuarios', (req, res) => {
   res.json([
-    { id: 1, nombre: 'Juan' },
-    { id: 2, nombre: 'Maria' }
+    { id: 1, nombre: 'Mario' },
+    { id: 2, nombre: 'Jorge' }
   ]);
 });
 
