@@ -28,6 +28,11 @@ app.get('/mision-ulsa', (req, res) => {
   });
 });
 
+// Ruta dinámica para saludar
+app.get('/saludar/:nombre', (req, res) => {
+  const nombre = req.params.nombre;
+  res.send(`Hola señor ${nombre}, bienvenido a su API, esperando sus ordenes`);
+});
 
 // Exportamos la app en lugar de ejecutar listen
 module.exports = app;
