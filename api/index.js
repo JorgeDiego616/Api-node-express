@@ -21,5 +21,13 @@ app.post('/usuarios', (req, res) => {
   res.json({ mensaje: 'Usuario recibido', data: nuevoUsuario });
 });
 
+// Ruta GET para Misión ULSA
+app.get('/mision-ulsa', (req, res) => {
+  res.json({
+    mision: "Somos una institución que forma parte de una red global de inspiración cristiana lasallista; comprometida con la educación profesional y formación integral de las personas quienes, con su acción transformadora, trasciendan al coadyuvar en la construcción de una ciudadanía responsable y solidaria, en el cambio social y el cuidado de la Casa Común"
+  });
+});
+
+
 // Exportamos la app en lugar de ejecutar listen
 module.exports = app;
