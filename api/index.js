@@ -6,7 +6,7 @@ app.use(express.json());
 
 // Rutas de la API
 app.get('/', (req, res) => {
-  res.send('Bienvenido a mi API con Node y Express en Vercel');
+  res.send('Bienvenido a la API de Jorge Chaparro con Node y Express en Vercel');
 });
 
 app.get('/usuarios', (req, res) => {
